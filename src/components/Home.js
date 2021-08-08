@@ -5,15 +5,16 @@ import logo from '../images/logo_white.svg'
 import Grid from '@material-ui/core/Grid';
 import Button from '@material-ui/core/Button';
 import { Divider } from '@material-ui/core';
-
+import homebg from '../images/homebg.jpg';
+import '../components/Home.css';
 
 const useStyles = makeStyles((theme) => ({
 
     wrapper:{
         height: '100vh',
         width: '100vw',
-        backgroundColor: '#0093E9',
-        backgroundImage: 'linear-gradient(160deg, #0093E9 0%, #80D0C7 100%)',
+        //backgroundColor: '#0093E9',
+        //backgroundImage:  'linear-gradient(160deg, #0093E9 0%, #80D0C7 100%)',
         // paddingTop:'5%',
        
         
@@ -60,7 +61,7 @@ const useStyles = makeStyles((theme) => ({
         fontFamily:'Montserrat',
         fontWeight:'bold',
         fontSize:20,
-        color:'#2c3e50',
+        color:'#fff',
         // fontStyle:'italic'
     },
 
@@ -76,13 +77,6 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-
-
-
-
-
-
-
 function Home() {
 
     
@@ -91,7 +85,8 @@ function Home() {
 
     return (
         <Grid container className={classes.wrapper} id='home'>
-
+            <div className="overlay"> <h1>Example Overlay</h1> 
+            </div>
             <Grid item sm={6} xs={12} className={classes.imagewrapper}>
                 <img src={logo} className={classes.image}></img>
                 <div className={classes.quote}>DOWNLOAD THE APP</div>
@@ -117,3 +112,4 @@ function Home() {
 }
 
 export default Home
+

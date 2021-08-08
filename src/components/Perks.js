@@ -7,7 +7,7 @@ import Button from '@material-ui/core/Button';
 import Modal from '@material-ui/core/Modal';
 import Backdrop from '@material-ui/core/Backdrop';
 import Fade from '@material-ui/core/Fade';
-import psygist from '../images/psygist.svg';
+import psygist from '../images/psygist1.svg';
 import psytrist from '../images/psytrist.svg';
 import ment from '../images/ment.svg';
 
@@ -32,12 +32,17 @@ const useStyles = makeStyles((theme) => ({
     },
     
     imagewrapper:{
-        paddingTop:'5%',
+        // paddingTop:'5%',
         // backgroundColor:'rgb(77, 219, 255)'
     },
 
     image:{
-        height:450
+        height:650
+    },
+
+    image1:{
+        paddingTop:95,
+        height:410
     },
     
     text:{
@@ -120,6 +125,16 @@ const useStyles = makeStyles((theme) => ({
         padding: theme.spacing(2, 4, 3),
       },
 
+      threeText:{
+        fontSize:30,
+        fontFamily:'Pacifico',
+        textAlign:'center',
+        paddingRight:50,
+        paddingLeft:50,
+        color:'#fff'
+    },
+
+
       font: {
         fontFamily:'Pacifico',
         textAlign:'center'
@@ -171,8 +186,9 @@ function Perks() {
 
             <Grid container item sm={4} xs={4} className={classes.cols}>
                 <Grid item sm={12} xs={12} className={classes.img}>
-                <img src={psygist} className={classes.image} onClick={handleOpen1}></img>
-                <div>Psychologist</div>
+                <div className={classes.threeText}>Psychologist</div>
+                <img src={psygist} className={classes.image1} onClick={handleOpen1}></img>
+                
                     {/* <Button >Psychologist</Button> */}
                     <Modal
         aria-labelledby="transition-modal-title"
@@ -205,8 +221,9 @@ function Perks() {
 
             <Grid container item sm={4} xs={4} className={classes.cols}>
                 <Grid item sm={12} xs={12} className={classes.img}>
+                <div className={classes.threeText}>Psychiatrist</div>
                 <img src={psytrist} className={classes.image} onClick={handleOpen2}></img>
-                <div>Psychiatrist</div>
+                
                 {/* <Button onClick={handleOpen}>Psychiatrist</Button> */}
                     <Modal
         aria-labelledby="transition-modal-title"
@@ -237,8 +254,9 @@ function Perks() {
 
             <Grid container item sm={4} xs={4} className={classes.cols}>
                 <Grid item sm={12} xs={12} className={classes.img}>
+                <div className={classes.threeText}>Mentor</div>
                 <img src={ment} className={classes.image} onClick={handleOpen3}></img>
-                <div>Mentor</div>
+                
                 {/* <Button onClick={handleOpen}>Mentor</Button> */}
                     <Modal
         aria-labelledby="transition-modal-title"
