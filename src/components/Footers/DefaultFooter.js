@@ -15,7 +15,7 @@ function DefaultFooter() {
 						<ul>
 							<li>
 								<a
-									href="https://www.creative-tim.com?ref=nukr-default-footer"
+									href="https://www.linkedin.com/in/prithviraj-chauhan/"
 									target="_blank"
 								>
 									Dendo LTD

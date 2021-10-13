@@ -12,7 +12,7 @@ function DarkFooter() {
 					<ul>
 						<li>
 							<a
-								href="https://www.creative-tim.com?ref=nukr-dark-footer"
+								href="https://www.linkedin.com/in/prithviraj-chauhan/"
 								target="_blank"
 							>
 								Team Dendo
